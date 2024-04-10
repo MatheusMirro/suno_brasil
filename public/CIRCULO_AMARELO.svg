@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 901.89 853.14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ede46b;
+        opacity: .5;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="SECAO-01-Hero">
+    <path class="cls-1" d="M450.94,853.14C173.8,853.14,0,678.77,0,426.57S173.8,0,450.94,0s450.95,174.37,450.95,426.57-173.81,426.57-450.95,426.57Z"/>
+  </g>
+</svg>
