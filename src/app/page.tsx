@@ -1,7 +1,14 @@
-export default function Home() {
+'use client'
+
+import React from 'react';
+import Header from '../app/components/Header/index';
+
+const Home: React.FC = () => {
   return (
     <div>
-      <h1>Bom dia!</h1>
+      <Header />
     </div>
   );
-}
+};
+
+export default Home;
