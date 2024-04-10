@@ -29,6 +29,7 @@ export const MiddleText = styled.h1`
 export const SpecialistButton = styled.button`
     width: 300px;
     height: 35px;
+    cursor: pointer;
     border-radius: 25px;
     border: transparent;
     background-color: #00cbc5;
