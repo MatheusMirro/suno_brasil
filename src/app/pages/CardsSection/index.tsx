@@ -2,7 +2,7 @@ import React from 'react'
 
 function CardsSection() {
     return (
-        <div className="mt-96 bg-suno-light-yellow px-9 pb-10">
+        <div className="bg-suno-light-yellow px-9 pb-10">
             <h2 className="text-3xl text-center text-suno-dark-blue my-9 font-bold p-10">
                 Conhecemos bem o mercado e estamos sempre atualizados com <br/>
                 as melhores tecnologias. Por isso, desempenhamos um papel <br/>
