@@ -11,21 +11,21 @@ const Footer: React.FC = () => {
             </div>
             <div className="px-24 pt-5 flex">
                 <div className="mr-[20%]">
-                    <p className="text-white schibsted font-medium text-xl py-px">Suno Brasil</p>
-                    <p className="text-white schibsted font-medium text-xl py-px">São Paulo – SP</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Suno Brasil</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">São Paulo – SP</p>
                 </div>
                 <div className="mr-[20%]">
-                    <p className="text-white schibsted font-medium text-xl py-px">Home</p>
-                    <p className="text-white schibsted font-medium text-xl py-px">Quem Somos</p>
-                    <p className="text-white schibsted font-medium text-xl py-px">Soluções</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Home</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Quem Somos</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Soluções</p>
                 </div>
                 <div className="mr-[20%]">
-                    <p className="text-white schibsted font-medium text-xl py-px">Sunotech</p>
-                    <p className="text-white schibsted font-medium text-xl py-px">RPO</p>
-                    <p className="text-white schibsted font-medium text-xl py-px">Staffing</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Sunotech</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">RPO</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Staffing</p>
                 </div>
                 <div>
-                    <p className="text-white schibsted font-medium text-xl py-px">Contato</p>
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Contato</p>
                 </div>
             </div>
         </footer>
