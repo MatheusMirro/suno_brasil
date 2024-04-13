@@ -13,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      <link rel="icon" href="simbolo-suno-azul.svg" sizes="any" />
     </html>
   )
 }
