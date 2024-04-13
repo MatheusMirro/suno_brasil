@@ -6,6 +6,7 @@ import Section1 from './pages/Section1';
 import CardsSection from './pages/CardsSection';
 import ServicesSection from './pages/ServicesSection';
 import Form from './pages/Form';
+import Footer from './components/Footer';
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <ServicesSection />
       <CardsSection />
       <Form />
+      <Footer />
     </div>
   );
 };
