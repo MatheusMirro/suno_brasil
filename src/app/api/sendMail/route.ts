@@ -3,52 +3,63 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
 // Function to handle POST requests
-export async function sendMail(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
-        // Extract data from the request body
-        const { nome, empresa, telefone, email, mensagem } = req.body;
-        console.log('Dados recebidos:', { nome, empresa, telefone, email, mensagem });
-
         try {
+            // Parse JSON from request body
+            const { nome, empresa, telefone, email, mensagem } = req.body;
+            console.log('Dados recebidos:', { nome, empresa, telefone, email, mensagem });
+
             // Configure email transport
             const transporter = nodemailer.createTransport({
-                service: "gmail",
-                host: "smtp.gmail.com",
+                service: process.env.SERVICE,
+                host: process.env.HOST,
                 port: 587,
+                secure: false,
                 auth: {
-                    user: "imirro13@gmail.com",
-                    pass: "teste"
+                    user: process.env.YOUR_EMAIL,
+                    pass: process.env.YOUR_PASSWORD // (Recomendável não armazenar credenciais diretamente no código)
                 }
             });
 
             // Configure email options
             const mailOptions = {
-                from: 'seu-email@gmail.com', // Your Gmail email address
-                to: 'matheus.alvespaiva96@gmail.com', // Email address to receive the forms
-                subject: 'Contact Form', // Email subject
+                from: process.env.YOUR_EMAIL,
+                to: process.env.DESTINATION,
+                subject: 'Teste final.',
                 text: `
-                    Name: ${nome}
-                    Company: ${empresa}
-                    Phone: ${telefone}
-                    Email: ${email}
-                    Message: ${mensagem}
-                `,
+          Name: ${nome}
+          Company: ${empresa}
+          Phone: ${telefone}
+          Email: ${email}
+          Message: ${mensagem}
+        `,
             };
-            console.log('Email options:', mailOptions);
 
             // Send email
-            const info = await transporter.sendMail(mailOptions);
-            console.log('Email sent:', info.response);
-
-            // Respond to the request successfully
-            res.status(200).json({ success: true, message: 'Email sent successfully.' });
+            try {
+                await transporter.sendMail(mailOptions);
+                const response = {
+                    success: "Email enviado com sucesso."
+                };
+                return new Response(JSON.stringify(response), {
+                    status: 200,
+                })
+            } catch (error) {
+                const response = {
+                    failed: "Erro ao enviar o email."
+                }
+                return new Response(JSON.stringify(response), {
+                    status: 500,
+                })
+            }
         } catch (error) {
-            // Respond to the request with an error in case of failure
-            console.error('Error sending email:', error);
-            res.status(500).json({ success: false, message: 'Error sending email.' });
+            const response = {
+                success: "Erro ao processar a solicitação."
+            };
+            return new Response(JSON.stringify(response), {
+                status: 500,
+            })
         }
-    } else {
-        // If the method is not POST, respond to the request with a method not allowed error
-        res.status(405).json({ success: false, message: 'Method not allowed.' });
     }
 }
