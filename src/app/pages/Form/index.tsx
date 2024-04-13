@@ -39,8 +39,22 @@ const Formulario = () => {
     };
 
     return (
-        <div className="bg-suno-gray flex flex-col items-center justify-center h-full">
-            <div className="w-full max-w-md">
+        <div className="bg-suno-gray flex justify-around h-full py-14">
+            <div>
+                <h1 className="text-suno-acqua font-extrabold schibsted text-5xl pb-8">
+                    Fale com<br/>
+                    a gente.
+                </h1>
+                <p className="text-suno-dark-blue font-medium schibsted text-3xl pb-8">
+                    Nossos especialistas<br/>
+                    têm a solução certa<br/>
+                    para a sua demanda.
+                </p>
+                <img></img>
+                <p className="text-suno-dark-blue font-extrabold schibsted text-3xl">(11) 98217-2824</p>
+                <p className="text-suno-dark-blue font-medium schibsted text-3xl">contato@sunobrasil.com.br</p>
+            </div>
+            <div className="w-1/3 flex-col">
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -48,7 +62,7 @@ const Formulario = () => {
                         value={formData.nome}
                         onChange={handleChange}
                         placeholder="Nome"
-                        className="mb-2 p-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                        className="mb-5 p-2 w-full border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
                     />
                     <input
                         type="text"
@@ -56,7 +70,7 @@ const Formulario = () => {
                         value={formData.empresa}
                         onChange={handleChange}
                         placeholder="Empresa"
-                        className="mb-2 p-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                        className="mb-5 mr-2 p-2 w-[48%] border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
                     />
                     <input
                         type="text"
@@ -64,22 +78,23 @@ const Formulario = () => {
                         value={formData.telefone}
                         onChange={handleChange}
                         placeholder="Telefone"
-                        className="mb-2 p-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                        className="mb-5 p-2 w-1/2 border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
                     />
-                    {/* <input
+                    <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Email"
-                        className="mb-2 p-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
-                    /> */}
+                        className="mb-5 p-2 w-full border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
+                    />
 
-                    <div className="flex justify-between mb-2">
-                        {['Recrutamento e Seleção', 'Hunting para TI', 'Staffing'].map((buttonName, index) => (
+                    <p className="text-suno-dark-blue my-5 font-medium schibsted text-2xl">O que você está buscando?</p>
+                    <div className="flex justify-start mb-5 gap-4 flex-wrap">
+                        {['Recrutamento e Seleção', 'Hunting para TI', 'Staffing', 'Alocação', 'RPO'].map((buttonName, index) => (
                             <button
                                 key={index}
-                                className={`w-24 p-2 ${selectedButton === buttonName ? 'bg-blue-500 text-white' : 'bg-gray-200'} rounded`}
+                                className={`w-48 h-14 border rounded-3xl text-suno-dark-blue font-medium schibsted text-lg leading-5 text-center ${selectedButton === buttonName ? 'bg-suno-dark-blue text-white border-white' : 'bg-suno-gray border-suno-dark-blue'}`}
                                 onClick={() => handleButtonClick(buttonName)}
                                 type="button" // Adiciona type="button" para evitar o envio do formulário
                             >
@@ -87,17 +102,18 @@ const Formulario = () => {
                             </button>
                         ))}
                     </div>
-                    {/* Outros botões omitidos para brevidade */}
-
+                    <label htmlFor="more-information" className="text-suno-dark-blue font-medium schibsted text-2xl"> 
+                        Conte-nos um pouco sobre sua demanda:
+                    </label>
                     <textarea
+                        id="more-information"
                         name="mensagem"
                         value={formData.mensagem}
                         onChange={handleChange}
-                        placeholder="Digite aqui..."
-                        className="mb-2 p-2 border-b border-gray-300 focus:outline-none focus:border-blue-500"
+                        className="mb-5 p-2 border rounded border-suno-dark-blue w-full h-40 my-2 bg-suno-gray resize-none"
                     />
 
-                    <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded">Enviar</button>
+                    <button type="submit" className="w-48 h-14 p-2 bg-suno-dark-blue text-suno-acqua rounded-3xl font-extrabold schibsted text-lg">ENVIAR</button>
                 </form>
             </div>
         </div>
