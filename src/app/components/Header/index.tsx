@@ -1,33 +1,44 @@
 import Link from 'next/link';
-import { HeaderContainer, Logo, Menu } from '../Header/style';
 
 const Header: React.FC = () => {
     return (
-        <HeaderContainer>
-            <Link href="/">
-                <Logo src="LOGO_SUNO_BRASIL.svg" alt="Logo da loja" />
-            </Link>
-
-            <Menu>
-                <ul>
-                    <li>
-                        HOME
-                    </li>
-                    <li>
-                        QUEM SOMOS
-                    </li>
-                    <li>
-                        SOLUÇÕES
-                    </li>
-                    <li>
-                        SUNOTECH
-                    </li>
-                    <li>
-                        CONTATO
-                    </li>
+        <header className="bg-white">
+          <nav className="container mx-auto px-6 py-3 h-20 pt-6">
+            <div className="flex items-center justify-between">
+              <div className="text-suno-dark-blue text-2xl">
+                <img className="w-80" src="LOGO_SUNO_BRASIL.svg" alt="Logo da loja"/> 
+              </div>
+              <div className="hidden md:block">
+                <ul className="flex items-center space-x-8">
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
                 </ul>
-            </Menu>
-        </HeaderContainer>
+              </div>
+              <div className="md:hidden">
+                <button className="outline-none mobile-menu-button">
+                  <svg className="w-6 h-6 text-suno-dark-blue" x-show="!showMenu" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="mobile-menu hidden md:hidden">
+              <ul className="mt-4 space-y-4">
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
+                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
+              </ul>
+            </div>
+            
+          </nav>
+        </header>
     );
 };
 
