@@ -1,6 +1,4 @@
-"use client"
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Formulario = () => {
@@ -14,22 +12,30 @@ const Formulario = () => {
         selectedButton: '',
     });
 
+    useEffect(() => {
+        console.log("formData:", formData);
+    }, [formData]);
+
     const handleChange = (e: any) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData(prevState => ({ ...prevState, [name]: value }));
     };
 
     const handleButtonClick = (buttonName: any) => {
         setSelectedButton(buttonName);
-        setFormData({ ...formData, selectedButton: buttonName });
+        setFormData(prevState => ({ ...prevState, selectedButton: buttonName }));
     };
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         try {
             if (selectedButton !== '') {
-                const response = await axios.post('/api/sendMail', formData);
-                console.log(response.data);
+                const response = await axios.post('/api/sendMail', JSON.stringify(formData), {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                console.log("Resposta do servidor:", response.data);
             } else {
                 console.log('Nenhum botão foi selecionado');
             }
@@ -102,9 +108,6 @@ const Formulario = () => {
                             </button>
                         ))}
                     </div>
-                    <label htmlFor="more-information" className="text-suno-dark-blue font-medium schibsted text-2xl"> 
-                        Conte-nos um pouco sobre sua demanda:
-                    </label>
                     <textarea
                         id="more-information"
                         name="mensagem"
