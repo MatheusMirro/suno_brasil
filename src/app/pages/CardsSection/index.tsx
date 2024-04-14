@@ -2,14 +2,14 @@ import React from 'react'
 
 function CardsSection() {
     return (
-        <div className="bg-suno-light-yellow px-9 pb-10">
+        <div className="bg-suno-light-yellow px-9 pb-10 md:w-full">
             <h2 className="text-3xl text-center text-suno-dark-blue font-bold p-10">
                 Conhecemos bem o mercado e estamos sempre atualizados com <br />
                 as melhores tecnologias. Por isso, desempenhamos um papel <br />
                 crucial na identificação e aquisição de talentos estratégicos para <br />
                 organizações que buscam preencher cargos de alto nível.
             </h2>
-            <div className="grid grid-cols-5 gap-1 align-middle">
+            <div className="grid gap-1 align-middle md:grid-cols-0 lg:grid-cols-5">
                 <div className="card border-b-suno-acqua">
                     <img className="h-auto w-2/6 bottom-2.5 m-auto pt-5" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
                     <p className="schibsted text-suno-dark-blue font-bold text-xl p-10">

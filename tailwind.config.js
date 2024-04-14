@@ -12,6 +12,9 @@ module.exports = {
         'suno-light-acqua':'#80e5e2',
         'suno-yellow':'#ede46b',
         'suno-light-yellow':'#f6f2b5'
+      },
+      backgroundImage: {
+        'suno-sun': "url('CIRCULO_AMARELO.svg')"
       }
     },
   },
