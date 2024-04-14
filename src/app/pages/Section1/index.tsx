@@ -2,8 +2,8 @@ import React from 'react'
 
 function Section1() {
     return (
-        <div className="relative">
-            <div className="w-full flex flex-col items-center justify-center bg-suno-gray">
+        <div className="relative w-full">
+            <div className="flex flex-col items-center justify-center bg-suno-gray">
                 <h1 className="schibsted text-5xl text-center text-suno-dark-blue my-9 font-extrabold">
                     Somos uma consultoria de<br />
                     recrutamento, seleção e alocação<br />
