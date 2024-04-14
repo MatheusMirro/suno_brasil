@@ -45,7 +45,7 @@ const Formulario = () => {
     };
 
     return (
-        <div className="bg-suno-gray flex justify-around h-full py-14">
+        <div className="bg-suno-gray flex justify-around h-full lg:py-14 min-[320px]:max-md:p-5 min-[320px]:max-md:flex-col">
             <div>
                 <h1 className="text-suno-acqua font-extrabold schibsted text-5xl pb-8">
                     Fale com<br/>
@@ -58,9 +58,9 @@ const Formulario = () => {
                 </p>
                 <img></img>
                 <p className="text-suno-dark-blue font-extrabold schibsted text-3xl">(11) 98217-2824</p>
-                <p className="text-suno-dark-blue font-medium schibsted text-3xl">contato@sunobrasil.com.br</p>
+                <p className="text-suno-dark-blue font-medium schibsted lg:text-3xl min-[320px]:max-md:text-xl">contato@sunobrasil.com.br</p>
             </div>
-            <div className="w-1/3 flex-col">
+            <div className="lg:w-1/3 flex-col min-[320px]:max-md:mt-11 min-[320px]:max-md:w-[85%]">
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
@@ -76,7 +76,7 @@ const Formulario = () => {
                         value={formData.empresa}
                         onChange={handleChange}
                         placeholder="Empresa"
-                        className="mb-5 mr-2 p-2 w-[48%] border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
+                        className="mb-5 mr-2 p-2 lg:w-[48%] border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl min-[320px]:max-md:w-full"
                     />
                     <input
                         type="text"
@@ -84,7 +84,7 @@ const Formulario = () => {
                         value={formData.telefone}
                         onChange={handleChange}
                         placeholder="Telefone"
-                        className="mb-5 p-2 w-1/2 border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl"
+                        className="mb-5 p-2 lg:w-1/2 border-b border-suno-dark-blue focus:outline-none placeholder-suno-dark-blue bg-suno-gray font-medium schibsted text-2xl min-[320px]:max-md:w-full"
                     />
                     <input
                         type="email"
