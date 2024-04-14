@@ -2,11 +2,11 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-suno-dark-blue w-full h-80">
             <div className="pt-10 pb-4 w-[90%] border-b-2 border-white flex m-auto justify-between">
-                <img className="w-10" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
+                <img className="w-60" src="LOGO_SUNO_BRASIL_BRANCA.svg" alt="Círculo Amarelo"></img>
                 <div className="flex flex-row gap-5">
-                    <img className="w-10" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
-                    <img className="w-10" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
-                    <img className="w-10" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
+                    <img className="w-8" src="REDE_LINKEDIN.svg" alt="Círculo Amarelo"></img>
+                    <img className="w-8" src="REDE_INSTAGRAM.svg" alt="Círculo Amarelo"></img>
+                    <img className="w-8" src="REDE_WHATSAPP.svg" alt="Círculo Amarelo"></img>
                 </div>
             </div>
             <div className="px-24 pt-5 flex">

@@ -1,9 +1,8 @@
-// Import necessary modules
 import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
 // Function to handle POST requests
-export async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         try {
             // Parse JSON from request body
