@@ -3,23 +3,11 @@ import React from 'react'
 
 function ReasonSection() {
     return (
-        <div className="bg-suno-gray px-9 pb-10 md:w-full bg-suno-blue-circle bg-('url['/public/CIRCULO_FUNDO.svg']')">
+        <div className="bg-suno-gray px-9 pb-10 md:w-full bg-suno-blue-circle relative">
+            <img className="m-auto absolute w-full z-0 left-[1%] top-[-3%]" src="CIRCULO_FUNDO.svg" alt="Círculo fundo"></img> 
             <h1 className="text-center text-suno-dark-blue font-extrabold schibsted text-4xl mb-8">
                 Por que escolher a Sunotech?
             </h1>
-            <img className="m-auto absolute w-full z-0 
-                            min-[320px]:max-[1024px]:left-[1%] 
-                            min-[320px]:max-[374px]:bottom-[-160%] 
-                            min-[375px]:max-[424px]:bottom-[-140%]
-                            min-[425px]:max-[677px]:bottom-[-125%]
-                            min-[678px]:max-[767px]:bottom-[-115%]
-                            min-[768px]:max-[1023px]:bottom-[-145%]
-                            min-[1024px]:max-[1440px]:bottom-[-200%]
-                            min-[1441px]:max-[1780px]:bottom-[-215%]
-                            min-[1441px]:w-[95%]
-                            min-[1781px]:top-[145%]"
-                            // This is a mess, I have no idea what is happening
-                            src="CIRCULO_FUNDO.svg" alt="Círculo fundo"></img>
             <div className="flex min-[320px]:max-md:flex-col md:flex-wrap xl:px-20 gap-7">
                 <div className="bg-white border rounded-3xl min-[320px]:max-[1024px]:p-7 lg:p-10 break-words mb-3 lg:w-[48%] z-10">
                     <img className="min-[320px]:max-[1024px]:w-[20%] lg:w-[15%] my-3" src="ICON-EXPERTISE.svg" alt="Icone Expertise"></img>
