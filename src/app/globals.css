@@ -21,4 +21,11 @@
         text-align: center;
         margin: 0 auto;
     }
+
+    .grid-autofit {
+        grid-template-columns: repeat(auto-fit, 300px);
+        column-gap: 25px;
+        row-gap: 25px;
+        justify-items: center;
+    }
   }

@@ -9,7 +9,7 @@ function CardsSection() {
                 crucial na identificação e aquisição de talentos estratégicos para <br />
                 organizações que buscam preencher cargos de alto nível.
             </h2>
-            <div className="grid gap-1 align-middle md:grid-cols-0 lg:grid-cols-5">
+            <div className="grid align-middle min-[320px]:max-lg:gap-9 lg:grid-autofit justify-center">
                 <div className="card border-b-suno-acqua">
                     <img className="h-auto w-2/6 bottom-2.5 m-auto pt-5" src="ICON_SUPORTE.svg" alt="Círculo Amarelo"></img>
                     <p className="schibsted text-suno-dark-blue font-bold text-xl p-10">
