@@ -14,7 +14,8 @@ module.exports = {
         'suno-light-yellow':'#f6f2b5'
       },
       backgroundImage: {
-        'suno-sun': "url('CIRCULO_AMARELO.svg')"
+        'suno-sun': "url('/public/CIRCULO_AMARELO.svg')",
+        'suno-blue-circle': "url('/public/CIRCULO_FUNDO.svg')"
       }
     },
   },

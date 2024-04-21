@@ -45,7 +45,7 @@ const Formulario = () => {
     };
 
     return (
-        <div className="bg-suno-gray flex justify-around h-full lg:py-14 min-[320px]:max-md:p-5 min-[320px]:max-md:flex-col">
+        <div className="bg-suno-gray flex justify-around h-full lg:py-14 min-[320px]:max-lg:p-5 min-[320px]:max-lg:flex-col relative z-10">
             <div>
                 <h1 className="text-suno-acqua font-extrabold schibsted text-5xl pb-8">
                     Fale com<br/>
@@ -58,9 +58,9 @@ const Formulario = () => {
                 </p>
                 <img></img>
                 <p className="text-suno-dark-blue font-extrabold schibsted text-3xl">(11) 98217-2824</p>
-                <p className="text-suno-dark-blue font-medium schibsted lg:text-3xl min-[320px]:max-md:text-xl">contato@sunobrasil.com.br</p>
+                <p className="text-suno-dark-blue font-medium schibsted lg:text-3xl min-[320px]:max-lg:text-xl">contato@sunobrasil.com.br</p>
             </div>
-            <div className="lg:w-1/3 flex-col min-[320px]:max-md:mt-11 min-[320px]:max-md:w-[85%]">
+            <div className="lg:w-1/3 flex-col min-[320px]:max-lg:mt-11 min-[320px]:max-lg:w-[85%]">
                 <form onSubmit={handleSubmit}>
                     <input
                         type="text"
