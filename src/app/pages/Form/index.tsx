@@ -45,7 +45,7 @@ const Formulario = () => {
     };
 
     return (
-        <div className="bg-suno-gray flex justify-around h-full lg:py-14 min-[320px]:max-lg:p-5 min-[320px]:max-lg:flex-col relative z-10">
+        <div id="contact" className="bg-suno-gray flex justify-around h-full lg:py-14 min-[320px]:max-lg:p-5 min-[320px]:max-lg:flex-col relative z-10">
             <div>
                 <h1 className="text-suno-acqua font-extrabold schibsted text-5xl pb-8">
                     Fale com<br/>

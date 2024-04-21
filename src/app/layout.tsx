@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body>{children}</body>
       <link rel="icon" href="simbolo-suno-azul.svg" sizes="any" />
     </html>

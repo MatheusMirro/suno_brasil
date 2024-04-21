@@ -1,6 +1,6 @@
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-suno-dark-blue w-full lg:h-80 min-[320px]:max-md:h-auto">
+        <footer className="bg-suno-dark-blue w-full lg:h-80 min-[320px]:max-md:h-auto relative z-10">
             <div className="pt-10 pb-4 w-[90%] border-b-2 border-white flex m-auto justify-between min-[320px]:max-md:flex-col">
                 <img className="w-60 min-[320px]:max-md:mb-5" src="LOGO_SUNO_BRASIL_BRANCA.svg" alt="Círculo Amarelo"></img>
                 <div className="flex flex-row gap-5">

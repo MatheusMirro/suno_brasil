@@ -2,7 +2,7 @@ import React from 'react'
 
 function ServicesSection() {
     return (
-        <div className="h-full bg-suno-gray md:p-10">
+        <div id="solutions" className="h-full bg-suno-gray md:p-10">
             <div className="flex justify-center md:ml-12 min-[320px]:max-md:flex-col">
                 <div className="md:mr-20 min-[320px]:max-md:text-center">
                     <h3 className="text-suno-acqua text-5xl font-extrabold schibsted mb-5 min-[320px]:max-md:mt-5">

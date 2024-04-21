@@ -9,11 +9,11 @@ const Header: React.FC = () => {
               <div className="min-[320px]:max-[1024px]:hidden min-[1024px]:max-[1279px]:">
                 <ul className="flex items-center space-x-8">
                   <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
+                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
+                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
                   <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
                   <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
+                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
                 </ul>
               </div>
               <div className="lg:hidden">
@@ -27,11 +27,11 @@ const Header: React.FC = () => {
             <div className="mobile-menu hidden lg:hidden">
               <ul className="mt-4 space-y-4">
                   <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
+                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
+                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
                   <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
                   <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
+                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
               </ul>
             </div>
             
