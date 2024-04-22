@@ -5,7 +5,7 @@ function Section1() {
     return (
         <div className="relative w-full">
             <div id="about" className="flex flex-col items-center justify-center bg-suno-gray">
-                <h1 className="schibsted text-5xl text-center text-suno-dark-blue my-9 font-extrabold">
+                <h1 className="schibsted min-[320px]:max-[425px]:text-4xl text-5xl text-center text-suno-dark-blue my-9 font-extrabold">
                     Somos uma consultoria de<br />
                     recrutamento, seleção e alocação<br />
                     de talentos que fazem a diferença.
