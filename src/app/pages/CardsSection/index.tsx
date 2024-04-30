@@ -4,10 +4,8 @@ function CardsSection() {
     return (
         <div className="bg-suno-light-yellow px-9 pb-10 md:w-full">
             <h2 className="text-3xl text-center text-suno-dark-blue font-bold p-10">
-                Conhecemos bem o mercado e estamos sempre atualizados com <br />
-                as melhores tecnologias. Por isso, desempenhamos um papel <br />
-                crucial na identificação e aquisição de talentos estratégicos para <br />
-                organizações que buscam preencher cargos de alto nível.
+            Com brilho nos olhos e tecnologia no DNA, a Suno promove fits perfeitos, alinhados para o sucesso de equipes e negócios. <br/>
+            Atuamos em todas as áreas, nos setores público e privado.
             </h2>
             <div className="grid align-middle min-[320px]:max-lg:gap-9 lg:grid-autofit justify-center">
                 <div className="card border-b-suno-acqua">

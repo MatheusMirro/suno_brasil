@@ -11,12 +11,11 @@ const Header: React.FC = () => {
               </div>
               <div className="min-[320px]:max-[1024px]:hidden">
                 <ul className="flex items-center space-x-8">
-                  <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
-                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
-                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
-                  <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
-                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
+                  <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">HOME</a></li>
+                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">QUEM SOMOS</a></li>
+                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">SOLUÇÕES</a></li>
+                  <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">SUNOTECH</a></li>
+                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">CONTATO</a></li>
                 </ul>
               </div>
               <div className="xl:hidden">
@@ -29,12 +28,11 @@ const Header: React.FC = () => {
             </div>
             <div className={`xl:hidden z-20 absolute flex justify-end w-full bg-white ${showHeader? '': 'hidden'} duration-300 ease-out transition-all`}>
               <ul className="mt-4 space-y-4">
-                  <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">Home</a></li>
-                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">Quem Somos</a></li>
-                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">Soluções</a></li>
-                  <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">Sunotech</a></li>
-                  <li><a href="#" className="schibsted font-medium text-2xl text-suno-dark-blue">Clientes</a></li>
-                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">Contato</a></li>
+                  <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">HOME</a></li>
+                  <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">QUEM SOMOS</a></li>
+                  <li><a href="#solutions" className="schibsted font-medium text-2xl text-suno-dark-blue">SOLUÇÕES</a></li>
+                  <li><a href="/sunotech" className="schibsted font-medium text-2xl text-suno-dark-blue">SUNOTECH</a></li>
+                  <li><a href="#contact" className="schibsted font-medium text-2xl text-suno-dark-blue">CONTATO</a></li>
               </ul>
             </div>
             

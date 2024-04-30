@@ -9,22 +9,22 @@ const Footer: React.FC = () => {
                     <img className="w-8" src="REDE_WHATSAPP.svg" alt="Círculo Amarelo"></img>
                 </div>
             </div>
-            <div className="lg:px-24 lg:pt-5 flex min-[320px]:max-md:flex-col">
-                <div className="mr-[20%] min-[320px]:max-md:my-3 min-[320px]:max-md:p-3">
+            <div className="lg:px-24 lg:pt-5 flex min-[320px]:max-lg:flex-col">
+                <div className="xl:mr-[15%] lg:mr-[10%] min-[320px]:max-lg:my-3 min-[320px]:max-lg:p-3">
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Suno Brasil</p>
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">São Paulo – SP</p>
                 </div>
-                <div className="mr-[20%] min-[320px]:max-md:my-3 min-[320px]:max-md:p-3">
+                <div className="xl:mr-[15%] lg:mr-[10%] min-[320px]:max-lg:my-3 min-[320px]:max-lg:p-3">
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Home</p>
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Quem Somos</p>
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Soluções</p>
                 </div>
-                <div className="mr-[20%] min-[320px]:max-md:my-3 min-[320px]:max-md:p-3">
-                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Sunotech</p>
+                <div className="xl:mr-[15%] lg:mr-[10%] min-[320px]:max-lg:my-3 min-[320px]:max-lg:p-3">
+                    <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">SUNOTECH</p>
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">RPO</p>
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Staffing</p>
                 </div>
-                <div className="mr-[20%] min-[320px]:max-md:my-3 min-[320px]:max-md:p-3">
+                <div className="xl:mr-[15%] lg:mr-[10%] min-[320px]:max-lg:my-3 min-[320px]:max-lg:p-3">
                     <p className="text-white schibsted font-medium text-xl py-px cursor-pointer">Contato</p>
                 </div>
             </div>

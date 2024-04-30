@@ -100,7 +100,7 @@ const Formulario = () => {
                         {['Recrutamento e Seleção', 'Hunting para TI', 'Staffing', 'Alocação', 'RPO'].map((buttonName, index) => (
                             <button
                                 key={index}
-                                className={`w-48 h-14 border rounded-3xl text-suno-dark-blue font-medium schibsted text-lg leading-5 text-center ${selectedButton === buttonName ? 'bg-suno-dark-blue text-white border-white' : 'bg-suno-gray border-suno-dark-blue'}`}
+                                className={`min-[320px]:max-md:w-[44%] min-[320px]:max-md:text-sm w-48 h-14 p-1 border rounded-3xl text-suno-dark-blue font-medium schibsted text-lg leading-5 text-center ${selectedButton === buttonName ? 'bg-suno-dark-blue text-white border-white' : 'bg-suno-gray border-suno-dark-blue'}`}
                                 onClick={() => handleButtonClick(buttonName)}
                                 type="button" // Adiciona type="button" para evitar o envio do formulário
                             >
