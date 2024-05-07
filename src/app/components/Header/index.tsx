@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-const Header: React.FC = () => {
-    const [showHeader, setShowHeader] = useState(false)
+const Header = ({showHeader, setShowHeader}: {showHeader: boolean; setShowHeader: React.Dispatch<React.SetStateAction<boolean>>} ) => {
+    
     return (
-        <header className="bg-white w-full z-50">
+        <header className="bg-white w-full z-50 relative">
           <nav className="container mx-auto h-20 pt-6">
             <div className="flex items-center justify-between px-6 py-3">
               <div className="text-suno-dark-blue text-2xl">
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
                 </button>
               </div>
             </div>
-            <div className={`xl:hidden z-20 absolute flex justify-end w-full bg-white ${showHeader? '': 'hidden'} duration-300 ease-out transition-all`}>
+            <div className={`xl:hidden z-20 absolute flex justify-end w-full bg-white ${showHeader? '': 'hidden'} duration-300 ease-out transition-all p-3`}>
               <ul className="mt-4 space-y-4">
                   <li><a href="/" className="schibsted font-medium text-2xl text-suno-dark-blue">HOME</a></li>
                   <li><a href="#about" className="schibsted font-medium text-2xl text-suno-dark-blue">QUEM SOMOS</a></li>
