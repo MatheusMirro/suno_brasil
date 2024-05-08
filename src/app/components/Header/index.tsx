@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 const Header = ({showHeader, setShowHeader}: {showHeader: boolean; setShowHeader: React.Dispatch<React.SetStateAction<boolean>>} ) => {
     
