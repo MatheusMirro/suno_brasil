@@ -57,7 +57,7 @@ const Formulario = () => {
                     para a sua demanda.
                 </p>
                 <img></img>
-                <p className="text-suno-dark-blue font-extrabold schibsted text-3xl">(11) 4210 6364</p>
+                <p className="text-suno-dark-blue font-extrabold schibsted text-3xl">(11) 4210-6364</p>
                 <p className="text-suno-dark-blue font-medium schibsted lg:text-3xl min-[320px]:max-lg:text-xl">contato@sunobrasil.com.br</p>
             </div>
             <div className="lg:w-1/3 flex-col min-[320px]:max-lg:mt-11 min-[320px]:max-lg:w-[85%]">
